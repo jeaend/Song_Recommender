@@ -1,15 +1,17 @@
-# Song_Recommender
+# Song Recommender
 Recommender implemented using unsupervised machine learning, web scraping, and APIs to deliver personalized song recommendations. Utilizing clustering analysis on song features and data extraction techniques via web scraping and APIs, it provides tailored suggestions based on user input.
-
 
 ## Usage
 
 1. Make sure you have a Spotify Developer account and create an app to obtain your client ID and client secret.
-2. Save Spotify client ID and client secret as secrets.txt as follows:
+2. Save Spotify client ID and client secret as secrets.txt on the base level with following structure:
 ```
 clientid:c4cfff19516e40fa97e9fcf14b4db807
 clientsecret:2df69a0559ad41a08427ea14f3a81e5a
-```
+```  
+3. If you want to get the current songs, run the notebooks from 1-7.   
+-- If not just check out notebook 7, used saved songs and pickled model 
+
 
 ## Cluster Descriptions
 
@@ -25,3 +27,9 @@ clientsecret:2df69a0559ad41a08427ea14f3a81e5a
 | 7       | - High danceability and energy. - Very high speechiness. - Low acousticness and instrumentalness. - Very low liveness. - Moderate tempo.                            |
 | 8       | - High danceability, energy, and tempo. - Moderate speechiness and acousticness. - Low instrumentalness and liveness. - High valence.                                 |
 | 9       | - High danceability, energy, and valence. - Moderate speechiness. - Low instrumentalness, liveness, and tempo.                                                     |
+
+
+## Recommended Work 
+- add columns names to the pickled model to avoid warnings 
+- Improve error handling and general user input handling
+- Implement a more user-friendly environment using Streamlit
